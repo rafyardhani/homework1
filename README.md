@@ -9,7 +9,7 @@ Tidak semua produk memiliki struktur yang sama, beberapa fitur yang bersifat ops
 
 Hal ini menghasilkan error dengan tidak ditemukannya beberapa tag css sehingga dengan kondisi tersebut perlu ditambahkan sebuah kondisi (if) agar dapat mengcover kedua kondisi tersebut.
 
-### Deploy ke Streamlit
+### Deploy ke Streamlit Server
 Streamlit tidak dapat membuka webdriver sehingga menghasilkan error code Status code was: 127. Permasalahan ini dipicu dikarenakan selenium tidak bisa membuka webdriver bahkan ketika menggunakan parameter headless. Selain itu, saat menggunakan function 
 ```
 driver.find_element(By.CSS_SELECTOR, "button[aria-label^='Laman berikutnya']").click()
@@ -22,7 +22,7 @@ Kondisi saat ini jika menggunakan code CSS_SELECTOR diperlukan membuka webdriver
 ### Thumbnail
 Permasalahan yang jarang terjadi tetapi cukup mengganggu karena dapat membuat runtime menjadi error dikarenakan tidak terdapat gambar produk. Beberapa produk memiliki thumbnail dengan tipe video, ketika selenium berjalan dan cursor mengarah kepada produk yang memiliki thumbnail video maka error karena tag yang berbeda dengan thumbnail lainnya.
 
-### Menjalankan program
+### Menjalankan program di local
 melakukan clone repository 
 ```
 git clone https://github.com/rafyardhani/homework1.git
